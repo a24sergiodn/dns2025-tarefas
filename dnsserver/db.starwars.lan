@@ -1,0 +1,23 @@
+$TTL 604800
+@   IN  SOA dns.starwars.lan. georgelucas.starwars.com (
+                                2024010101  ; Serial (2025100601)
+                                604800      ; Refresh
+                                86400       ; Retry
+                                2419200     ; Expire
+                                604800 )    ; Negative Cache TTL
+;
+
+@               IN  NS      dns.starwars.lan.
+@               IN  A       127.0.0.1
+darthvader      IN  A       192.168.20.10
+skywalker       IN  A       192.168.20.101
+skywalker       IN  A       192.168.20.111
+luke            IN  A       192.168.20.22
+darthsidious    IN  A       192.168.20.11
+yoda            IN  A       192.168.20.24
+yoda            IN  A       192.168.20.25
+c3po            IN  A       192.168.20.26
+palpatin        IN  CNAME   darthsidious.starwars.lan.
+@               IN  MX      10 c3p0.starwars.lan.
+lenda           IN  TXT     "Que a forza te acompanhe"
+darthsidious    IN  NS      darthsidious.starwars.lan.
