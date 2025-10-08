@@ -19,7 +19,7 @@ services:
     networks:
       rededns:
         ipv4_address: 192.168.20.100
-    dns: 192.168.20.11
+    dns: 192.168.20.10
 networks:
   rededns:
     ipam:
